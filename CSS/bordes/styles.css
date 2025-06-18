@@ -1,0 +1,30 @@
+div {
+    background-color: blueviolet;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+div {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    /* border: 1px solid black;*/
+    /* border-top: 1px solid black;*/
+    /* border-top-rigth-radius: 1px;*/
+}
+
+body {
+    background-color: black;
+}
+
+input {
+    margin: 5px;
+    padding: 6px 9px;
+    border: none;
+    border-bottom: 1px solid blueviolet;
+    background: transparent;
+    color: blueviolet;
+    border-radius: 3px;
+}

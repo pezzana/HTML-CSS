@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+.card {
+    background-color: blueviolet;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 9px;
+    padding: 20px;
+    background-color: violet;
+    text-align: justify;
+}
