@@ -14,10 +14,24 @@ Este repo es personal mientras hago un curso completo de desarrollo web. Lo uso 
 
 ## 🧱 Estructura del repo
 
-- `html-basico/`
-- `css-basico/`
-- (Más carpetas por venir: flexbox, grid, proyectos, etc.)
+```text
+HTML-CSS/
+├── 01-html-basico/
+│  Contiene las primeras prácticas de HTML puro.
+│
+├── 02-css-basico/
+│  Ejercicios iniciales de estilado con CSS.
+│
+└── 03-ejercicios/
+   Proyectos prácticos que integran HTML y CSS.
 
+Actualmente incluye:
+Ejercicio 1 – Página simple
+Ejercicio 2 – Tarjeta de presentación
+Ejercicio 3 – Portafolio
+
+Cada proyecto tiene su propia carpeta con su respectivo index.html y style.css.
+```
 ## 🎯 Mi objetivo
 
 Entender cómo funciona realmente una página web desde cero. Poder armar sitios limpios, ordenados y funcionales, sin copiar y pegar código que no entiendo.
