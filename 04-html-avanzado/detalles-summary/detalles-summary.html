@@ -1,0 +1,34 @@
+<!--
+HTML semántico significa usar etiquetas que describen el significado del contenido.
+En vez de usar <div> para todo, se usan etiquetas específicas.
+
+POR QUÉ NO USAR <div> PARA TODO:
+    Un <div> NO tiene significado semántico.
+    Usarlo para la estructura confunde:
+        <div id="header">  → innecesario si existe <header>
+        <div class="menu"> → reemplaza por <nav>
+        <div class="caja"> → mejor usar <section> o <article>
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Details y Summary</title>
+</head>
+<body>
+
+<h1>Acordeones con HTML puro</h1>
+
+<details>
+    <summary>¿Qué es HTML?</summary>
+    <p>HTML es el lenguaje de marcado para documentos web.</p>
+</details>
+
+<details>
+    <summary>¿Qué es CSS?</summary>
+    <p>CSS es el lenguaje que define estilos y apariencia.</p>
+</details>
+
+</body>
+</html>

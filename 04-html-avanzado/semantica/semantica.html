@@ -1,0 +1,106 @@
+<!--
+¿Qué es HTML semántico?
+
+    Son etiquetas que describen la FUNCIÓN del contenido,
+    no su estilo visual.
+
+Etiquetas semánticas principales:
+    <header>   → cabecera de la página o sección
+    <nav>      → menú de navegación
+    <main>     → contenido principal
+    <section>  → secciones temáticas
+    <article>  → contenido independiente (post, noticia, tarjeta)
+    <aside>    → contenido secundario (barra lateral, widgets)
+    <footer>   → pie de página
+
+Estas reemplazan el uso de muchos <div> con clases como:
+    <div id="header">...</div>
+    <div class="menu">...</div>
+    <div class="contenido">...</div>
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Semántico</title>
+    <style>
+    body {
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+    }
+
+    header, nav, section, article, aside, footer {
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    header {
+        background: #2b3a67;
+        color: white;
+    }
+
+    nav {
+        background: #eaeaea;
+    }
+
+    main {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    article {
+        flex: 2;
+        background: #fff;
+    }
+
+    aside {
+        flex: 1;
+        background: #f5f5f5;
+    }
+
+    footer {
+        text-align: center;
+        background: #2b3a67;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1>Mi página semántica</h1>
+    <p>Ejemplo de estructura profesional en HTML 5</p>
+    </header>
+
+    <nav>
+    <a href="#">Inicio</a> |
+    <a href="#">Noticias</a> |
+    <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+    <article>
+        <h2>Artículo principal</h2>
+        <p>
+        Este es un artículo. Es contenido independiente.
+        Sirve para posts, noticias, tarjetas, etc.
+        </p>
+    </article>
+
+    <aside>
+        <h3>Contenido relacionado</h3>
+        <p>Esto es un aside. Información secundaria.</p>
+    </aside>
+    </main>
+
+    <footer>
+    &copy; 2025 – Página semántica de práctica
+    </footer>
+
+</body>
+</html>
