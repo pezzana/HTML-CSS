@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datalist en HTML</title>
+</head>
+<body>
+
+<!--
+DATALIST
+
+    ¿Qué es <datalist>?
+    - Es una lista de opciones sugeridas para un <input>.
+    - A diferencia de <select>, el usuario puede:
+        Escribir texto libre
+        O elegir una de las sugerencias
+
+    Diferencias con <select>:
+    - <select> obliga a elegir una opción.
+    - <datalist> permite tipear cualquier cosa y solo SUGIERE.
+-->
+
+<h1>Ejemplo de datalist</h1>
+
+<label for="lenguaje">Lenguaje que estás estudiando:</label>
+<input list="lenguajes" id="lenguaje" name="lenguaje" placeholder="Escribí o elegí una opción">
+
+<datalist id="lenguajes">
+    <option value="HTML">
+    <option value="CSS">
+    <option value="JavaScript">
+    <option value="Python">
+    <option value="Java">
+</datalist>
+
+</body>
+</html>
