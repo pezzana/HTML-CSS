@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia en HTML</title>
+</head>
+<body>
+
+<!--
+    MULTIMEDIA EN HTML
+
+<audio> y <video> permiten insertar sonido y video en una página.
+
+Atributos comunes:
+    controls   → muestra los controles de reproducción.
+    autoplay   → intenta reproducir automáticamente (a veces bloqueado por el navegador).
+    loop       → repite el contenido al finalizar.
+    muted      → comienza en silencio.
+    poster     → (solo en <video>) imagen mostrada antes de reproducir.
+
+<source> se usa dentro de <audio> o <video> para ofrecer varios formatos.
+El navegador elige automáticamente el que soporta.
+-->
+
+<h1>Ejemplo de audio y video</h1>
+
+<h2>Audio</h2>
+<audio controls>
+    <source src="mi-audio.mp3" type="audio/mpeg">
+    <source src="mi-audio.ogg" type="audio/ogg">
+    Tu navegador no soporta el elemento audio.
+</audio>
+
+<h2>Video</h2>
+<video controls width="400" poster="poster-ejemplo.jpg">
+    <source src="mi-video.mp4" type="video/mp4">
+    <source src="mi-video.webm" type="video/webm">
+    Tu navegador no soporta el elemento video.
+</video>
+
+</body>
+</html>

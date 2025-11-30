@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios avanzados</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    form {
+        max-width: 400px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 6px;
+        margin-top: 3px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 0.9rem;
+    }
+
+    fieldset {
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    legend {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .grupo-radio,
+    .grupo-check {
+        display: flex;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        background: #2e7d32;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+<!--
+FORMULARIOS AVANZADOS
+
+    Cosas nuevas sobre formularios:
+    - <label for=""> vinculado al id del input → mejora usabilidad y accesibilidad.
+    
+    - <fieldset> y <legend> agrupan campos relacionados.
+    
+    - Nuevos tipos de <input>: email, number, date, password, file...
+    
+    - <select> + <option> → listas desplegables.
+    
+    - <textarea> → textos largos.
+    
+    - Atributos: required, min, max, step, placeholder, checked...
+-->
+
+<h1>Formulario avanzado de ejemplo</h1>
+
+<form action="#" method="post">
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="correo">Correo electrónico</label>
+    <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
+
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" min="0" max="120">
+
+    <label for="fecha">Fecha de contacto preferida</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <fieldset>
+    <legend>Género (ejemplo con radio)</legend>
+    <div class="grupo-radio">
+        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+        <label><input type="radio" name="genero" value="otro"> Otro</label>
+    </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Intereses (ejemplo con checkbox)</legend>
+    <div class="grupo-check">
+        <label><input type="checkbox" name="intereses" value="frontend"> Frontend</label>
+        <label><input type="checkbox" name="intereses" value="backend"> Backend</label>
+            <label><input type="checkbox" name="intereses" value="fullstack"> Fullstack</label>
+    </div>
+    </fieldset>
+
+    <label for="nivel">Nivel de experiencia</label>
+    <select id="nivel" name="nivel">
+    <option value="">Seleccioná una opción</option>
+    <option value="junior">Junior</option>
+    <option value="semi">Semi-Senior</option>
+    <option value="senior">Senior</option>
+    </select>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje..."></textarea>
+
+    <label for="cv">Adjuntar CV (archivo)</label>
+    <input type="file" id="cv" name="cv">
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
