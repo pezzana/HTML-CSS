@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enlaces avanzados</title>
+</head>
+<body>
+
+<!--
+ENLACES AVANZADOS
+
+Tipos de enlaces útiles:
+- Enlace interno a una sección:
+    <a href="#contacto">Ir a contacto</a>
+
+- Enlace para enviar email:
+    <a href="mailto:correo@ejemplo.com">Enviar correo</a>
+
+- Enlace para llamar (móvil):
+    <a href="tel:+5493535649597">Llamar</a>
+
+- Enlace que fuerza la descarga:
+    <a href="archivo.pdf" download>Descargar PDF</a>
+
+- Abrir en nueva pestaña (mejor con rel="noopener noreferrer"):
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+    Ir a GitHub
+    </a>
+-->
+
+<h1>Enlaces avanzados</h1>
+
+<p><a href="#contacto">Ir a la sección de contacto</a></p>
+
+<p><a href="mailto:correo@ejemplo.com">Enviar un correo</a></p>
+
+<p><a href="tel:+5493535649597">Llamar por teléfono</a></p>
+
+<p><a href="archivo-ejemplo.pdf" download>Descargar PDF de ejemplo</a></p>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Aca irían los datos de contacto.</p>
+</section>
+
+</body>
+</html>
