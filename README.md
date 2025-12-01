@@ -24,13 +24,12 @@ HTML-CSS/
 │
 └── 03-ejercicios/
    Proyectos prácticos que integran HTML y CSS.
-
-Actualmente incluye:
-Ejercicio 1 – Página simple
-Ejercicio 2 – Tarjeta de presentación
-Ejercicio 3 – Portafolio
-
-Cada proyecto tiene su propia carpeta con su respectivo index.html y style.css.
+   Actualmente incluye:
+   Ejercicio 1 – Página simple
+   Ejercicio 2 – Tarjeta de presentación
+   Ejercicio 3 – Portafolio
+   Ejercicio 4 - pagina web avanzada (en curso) 
+   Cada proyecto tiene su propia carpeta con su respectivo index.html y style.css.
 ```
 ## 🎯 Mi objetivo
 
@@ -44,7 +43,7 @@ Entender cómo funciona realmente una página web desde cero. Poder armar sitios
 | CSS básico | ✅ Hecho |
 | HTML avanzado | 🟡 En curso |
 | CSS intermedio/avanzado | 🟡 En curso |
-| Flexbox / Grid | ⏳ Aún no hecho|
+| Flexbox / Grid | 🟡 En curso |
 | Responsive Design | ⏳ Aún no hecho |
 | Animaciones | ⏳ Aún no hecho |
 | Hosting | ⏳ Aún no hecho |
