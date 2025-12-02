@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    Ejercicio 04 – HTML avanzado (Cafetería)
+
+    Incluye:
+    - Meta etiquetas: charset, viewport, description, author.
+    - HTML semántico: header, nav, main, section, article, aside, footer.
+    - Tabla con thead, tbody, tfoot.
+    - Formulario avanzado: radio, checkbox, select, textarea, file, datalist, required.
+    - Multimedia: audio y video.
+    - Imágenes con loading="lazy".
+    - Enlaces avanzados: mailto:, tel:, download, anclas internas.
+    - Accesibilidad básica: alt en imágenes, label for en inputs.
+-->
+
+<meta name="description" content="Página de ejemplo de la cafetería Mica Fe 2025 para practicar HTML avanzado.">
+<meta name="author" content="Tomás Pezzana">
+
+<!-- Favicon de ejemplo (podés crear favicon.png en esta carpeta si querés) -->
+<link rel="icon" href="favicon.png" type="image/png">
+
+<title>Cafetería Mica Fe 2025</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="inicio">
+    <div class="contenedor encabezado">
+    <div>
+        <h1>Cafetería Mica Fe 2025</h1>
+        <p class="subtitulo">Café de especialidad · Pastelería casera · Buena onda</p>
+    </div>
+
+    <nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- Sección principal / hero -->
+    <section class="seccion hero">
+    <div class="contenedor">
+        <h2>Un café para quedarte, estudiar y pasarla bien</h2>
+        <p>
+        Mica Fe 2025 es una cafetería pensada para juntarse con amigos, trabajar tranquilo
+        o simplemente disfrutar un buen café de especialidad con algo dulce.
+        </p>
+
+        <p>
+        Si querés ver la carta completa:
+        <a href="carta-mica-fe.pdf" download>Descargar carta en PDF</a>
+        <!-- Podés crear un PDF vacío con ese nombre si querés probar el download -->
+        </p>
+
+        <a class="boton-primario" href="#menu">Ver menú destacado</a>
+    </div>
+    </section>
+
+    <!-- Sección sobre nosotros -->
+    <section id="sobre" class="seccion">
+    <div class="contenedor layout-sobre">
+        <article>
+        <h2>Sobre la cafetería</h2>
+        <p>
+            La dueña siempre soñó con tener una cafeteria, le gustaba la idea de tener un espacio
+            cómodo, con buen ambiente estilo natural y productos hechos con cariño.
+        </p>
+        <p>
+            Usamos café de tostadores locales, opciones con y sin azúcar, y
+            alternativas de bebidas para que todos puedan disfrutar.
+        </p>
+        </article>
+
+        <aside aria-label="Información adicional">
+        <h3>Horarios</h3>
+        <table class="tabla-horarios">
+            <thead>
+            <tr>
+                <th>Día</th>
+                <th>Horario</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Lunes a Viernes</td>
+                <td>07:00 a 20:30</td>
+            </tr>
+            <tr>
+                <td>Sábados</td>
+                <td>07:00 a 20:30</td>
+            </tr>
+            <tr>
+                <td>Domingos</td>
+                <td>Cerrado</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="2">📍 Mendoza y 25 de mayo</td>
+            </tr>
+            </tfoot>
+        </table>
+        </aside>
+    </div>
+    </section>
+
+    <!-- Menú destacado en tabla -->
+    <section id="menu" class="seccion seccion-oscura">
+    <div class="contenedor">
+        <h2>Menú destacado</h2>
+        <p>Algunos de los productos más pedidos en Mica Fe 2025.</p>
+
+        <table class="tabla-menu">
+        <thead>
+            <tr>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Precio aprox.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Latte Mica</td>
+            <td>Café espresso con leche cremosa y un toque de canela.</td>
+            <td>$ 2.500</td>
+            </tr>
+            <tr>
+            <td>Capuccino Dulce</td>
+            <td>Capuccino con salsa de caramelo y espuma suave.</td>
+            <td>$ 2.700</td>
+            </tr>
+            <tr>
+            <td>Medialunas rellenas</td>
+            <td>Medialunas caseras rellenas con jamón y queso o dulce de leche.</td>
+            <td>$ 2.000</td>
+            </tr>
+            <tr>
+            <td>Tostado Mica Fe</td>
+            <td>Pan de campo con jamón, queso y tomate.</td>
+            <td>$ 3.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+            <td colspan="3">Los precios son de ejemplo.</td>
+            </tr>
+        </tfoot>
+        </table>
+    </div>
+    </section>
+
+    <!-- Galería simple con lazy loading -->
+    <section class="seccion">
+    <div class="contenedor">
+        <h2>Galería</h2>
+        <p>Algunas imágenes de la cafetería.</p>
+
+        <div class="galeria">
+        <img src="DesayunoAireLibre.png"
+            loading="lazy"
+            alt="Desayuno de yogurt con frutas y cereales al aire libre.">
+        <img src="Picada.png"
+            loading="lazy"
+            alt="Picada con amigos al aire libre.">
+        <img src="Logo.png"
+            loading="lazy"
+            alt="Logotipo en el interior de la cafeteria.">
+        </div>
+    </div>
+    </section>
+
+    <!-- Formulario avanzado de reservas -->
+    <section id="reservas" class="seccion">
+    <div class="contenedor">
+        <h2>Reservas y pedidos</h2>
+        <p>
+        Completá el formulario para reservar una mesa o hacer un pedido para retirar.
+        </p>
+
+        <form action="#" method="post" class="form-reserva">
+        <label for="nombre">Nombre y apellido</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="tu@email.com">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 ...">
+
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Horario aproximado</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <fieldset>
+            <legend>Tipo de reserva</legend>
+            <label><input type="radio" name="tipo" value="mesa" checked> Mesa en el local</label>
+            <label><input type="radio" name="tipo" value="retiro"> Pedido para retirar</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label><input type="checkbox" name="preferencias" value="ventana"> Cerca de la ventana</label>
+            <label><input type="checkbox" name="preferencias" value="enchufe"> Cerca de enchufe</label>
+            <label><input type="checkbox" name="preferencias" value="silencio"> Zona más tranquila</label>
+        </fieldset>
+
+        <label for="personas">Cantidad de personas</label>
+        <select id="personas" name="personas">
+            <option value="">Seleccioná una opción</option>
+            <option value="1-2">1 - 2</option>
+            <option value="3-4">3 - 4</option>
+            <option value="5-6">5 - 6</option>
+            <option value="7+">7 o más</option>
+        </select>
+
+        <label for="bebida-favorita">Bebida favorita</label>
+        <input list="bebidas" id="bebida-favorita" name="bebida-favorita" placeholder="Elegí o escribí una bebida">
+        <datalist id="bebidas">
+            <option value="Latte">
+            <option value="Capuccino">
+            <option value="Americano">
+            <option value="Submarino">
+            <option value="Chocolate caliente">
+        </datalist>
+
+        <label for="mensaje">Comentarios / Pedido especial</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Sin azúcar, con leche vegetal, cumpleaños, etc."></textarea>
+
+        <label for="adjunto">Adjuntar imagen de referencia (opcional)</label>
+        <input type="file" id="adjunto" name="adjunto">
+
+        <button type="submit">Enviar solicitud</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Multimedia + contacto -->
+    <section id="contacto" class="seccion seccion-oscura">
+<div class="contenedor layout-contacto">
+
+    <aside aria-label="Ambiente de la cafetería">
+    <h3>Ambiente de la cafetería</h3>
+    <p>Un pequeño ejemplo del ambiente y la música de Micafé.</p>
+
+    <audio controls loop>
+        <source src="media/ambiente-micafe.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir el audio.
+    </audio>
+
+    <video controls width="260" poster="img/logo-neon.jpg">
+        <source src="media/recorrido-micafe.mp4" type="video/mp4">
+        Tu navegador no puede reproducir el video.
+    </video>
+    </aside>
+
+    <div class="contacto-info">
+    <h2>Contacto</h2>
+    <p>Si tenés dudas o querés coordinar algo especial, escribinos o llamanos.</p>
+
+    <ul class="lista-contacto">
+        <li><strong>Email:</strong>
+        <a href="mailto:contacto@micafe2025.com">contacto@micafe2025.com</a>
+        </li>
+        <li><strong>Teléfono:</strong>
+        <a href="tel:+5493511234567">+54 9 351 123 4567</a>
+        </li>
+        <li><strong>Instagram:</strong>
+        <a href="https://www.instagram.com/mica_fe2025/" target="_blank" rel="noopener noreferrer">
+            @mica_fe2025
+        </a>
+        </li>
+    </ul>
+    </div>
+
+</div>
+</section>
+
+
+    </main>
+
+    <footer>
+    <div class="contenedor footer-contenido">
+        <p>&copy; 2025 – Cafetería Mica Fe 2025 (Ejercicio HTML avanzado)</p>
+        <a href="#inicio">Volver arriba</a>
+    </div>
+    </footer>
+
+</body>
+</html>
